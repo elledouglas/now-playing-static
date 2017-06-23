@@ -201,85 +201,102 @@ figure {
   padding: 1em;
 }
 
-.about > p {
-  margin: 0;
-}
+
 /*MEDIA*/
 
 @media screen and (min-width: 768px) {
 
-  .about {
+.about {
    display: inline;
    width: 50%;
    float: right;
   }
 
-  .site-nav-list {
+.site-nav-list {
+  width: 100%;
   display: inline-block;
-width: 100%;
+
     padding-top: 5em;
   }
 
-  .site-nav-item {
+.site-nav-item {
     width: 100%;
   }
 
-  .site-logo {
-    z-index: 200;
-    width: 1.5em;
-    left: .5em;
+.site-logo {
+z-index: 200;
+width: 1.5em;
+left: .5em;
   }
-  .movie-details{
+.movie-details{
     padding-left: 5em;
   }
 
-    .site-nav {
-      display: inline-block;
-      width: 5em;
-    top: 0px;
+.site-nav {
+display: inline-block;
+width: 5em;
+top: 0px;
     }
 
   .movie-overview{
     display: inline;
   }
 
-  ul.footer-nav-list {
-    width: 50%;
-      display: inline;
-      float: left;
+ul.footer-nav-list {
+  width: 50%;
+  display: inline;
+    float: left;
     margin-top: 1rem;
     background-color: #333333;
-    color: #ffffff;
-      padding: 26px;
+color: #ffffff;
+padding: 26px;
   }
 
-  @media screen and (min-width: 992px) {
-
-   article:nth-child(n+2) {
-    float: left;
-    width: 33.3333333%;
+@media (min-width: 992px) {
+.site-logo:first-child {
+  z-index: 200;
+ margin-right: 5em;
+  left: .5em;
     }
 
-   article p:nth-child(n+2) {
-     display: none;
-   }
-
-  .movie-overview {
-   display: inline;}
-
-
-   .movie-details > h1 {
-     font-size: 15px;
-     display: inline;
-
-   }
-
-  .site-footer {
-    display: inline-block;
+}
+  :nth-child( 2n ){
+    display: inline;
     width: 100%;
-   }
-
   }
 
+   {
+    width: 100%;
+    float: left;
+  }
+
+img.movie-backdrop {
+  width: 33%;
+  float: left;
+}
+
+.site-nav {
+display: inline-block;
+width: 4em;
+top: 0px;
+    }
+
+    ul.footer-nav-list {
+      width: 50%;
+      display: inline;
+        float: left;
+        margin-top: 1rem;
+        margin-bottom: 10px;
+        background-color: #333333;
+    color: #ffffff;
+
+      }
+
+.about {
+ display: inline;
+  width: 50%;
+float: right;
+ margin-top: 16px;
+        }
 
 }
