@@ -114,10 +114,12 @@ figure {
   Hide the poster on mobile devices, only show backdrop
   TIP: Use media queries to reveal it on larger devices
 */
+@media (min-width: 600px) {
+
 .movie-poster {
   display: none;
 }
-
+}
 .movie-details {
   position: absolute;
   bottom: 0;
@@ -142,9 +144,16 @@ figure {
   Hide the overview on mobile devices
   TIP: Use media queries to reveal it on larger devices
 */
+@media (min-width: 600px){
+
+
+
 .movie-overview {
   display: none;
 }
+
+}
+
 
 .movie-title-label {
   font-family: "Montserrat", "Source Code Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -194,4 +203,83 @@ figure {
 
 .about > p {
   margin: 0;
+}
+/*MEDIA*/
+
+@media screen and (min-width: 768px) {
+
+  .about {
+   display: inline;
+   width: 50%;
+   float: right;
+  }
+
+  .site-nav-list {
+  display: inline-block;
+width: 100%;
+    padding-top: 5em;
+  }
+
+  .site-nav-item {
+    width: 100%;
+  }
+
+  .site-logo {
+    z-index: 200;
+    width: 1.5em;
+    left: .5em;
+  }
+  .movie-details{
+    padding-left: 5em;
+  }
+
+    .site-nav {
+      display: inline-block;
+      width: 5em;
+    top: 0px;
+    }
+
+  .movie-overview{
+    display: inline;
+  }
+
+  ul.footer-nav-list {
+    width: 50%;
+      display: inline;
+      float: left;
+    margin-top: 1rem;
+    background-color: #333333;
+    color: #ffffff;
+      padding: 26px;
+  }
+
+  @media screen and (min-width: 992px) {
+
+   article:nth-child(n+2) {
+    float: left;
+    width: 33.3333333%;
+    }
+
+   article p:nth-child(n+2) {
+     display: none;
+   }
+
+  .movie-overview {
+   display: inline;}
+
+
+   .movie-details > h1 {
+     font-size: 15px;
+     display: inline;
+
+   }
+
+  .site-footer {
+    display: inline-block;
+    width: 100%;
+   }
+
+  }
+
+
 }
