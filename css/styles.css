@@ -156,8 +156,8 @@ figure {
 
 
 .movie-title-label {
-  font-family: "Montserrat", "Source Code Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 0.7em;
+font-family: "Montserrat", "Source Code Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 0.7em;
   line-height: 1;
   text-transform: uppercase;
   color: gold;
@@ -204,12 +204,12 @@ figure {
 
 /*MEDIA*/
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
 
 .about {
-   display: inline;
-   width: 50%;
-   float: right;
+display: inline;
+ width: 50%;
+ float: right;
   }
 
 .site-nav-list {
@@ -250,30 +250,29 @@ ul.footer-nav-list {
     background-color: #333333;
 color: #ffffff;
 padding: 26px;
-  }
+  } }
 
 @media (min-width: 992px) {
 .site-logo:first-child {
   z-index: 200;
  margin-right: 5em;
   left: .5em;
+  width: 4.8em;
+padding-right: 1.2em;
     }
 
-}
-  :nth-child( 2n ){
-    display: inline;
-    width: 100%;
-  }
+    .movie-overview{
+      display: none;
 
-   {
-    width: 100%;
-    float: left;
-  }
+    }
+  article:first-child {
+      width: 100%;
+    }
 
-img.movie-backdrop {
-  width: 33%;
-  float: left;
-}
+    img {
+      width: 33%;
+      float: left;
+    }
 
 .site-nav {
 display: inline-block;
@@ -285,8 +284,7 @@ top: 0px;
       width: 50%;
       display: inline;
         float: left;
-        margin-top: 1rem;
-        margin-bottom: 10px;
+
         background-color: #333333;
     color: #ffffff;
 
@@ -296,7 +294,7 @@ top: 0px;
  display: inline;
   width: 50%;
 float: right;
- margin-top: 16px;
+
         }
 
 }
